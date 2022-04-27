@@ -25,16 +25,23 @@ There are several relevant subdirectories under this root folder:
     └─── header
     └─── image
 │
-└───SMARP
+└───SMARP    │
+    └─── header
+    └─── image
 │
 └───SPAT
 ```
 
-* AIA: Atmospheric Imaging Assembly (AIA) Data, grouped by active region (.sav files)
+* AIA: The Atmospheric Imaging Assembly (AIA) Data, grouped by active region (.sav files)
 * GOES: The flare event list based on the Geostationary Operational Environmental Satellite (GOES), covering the period of 1996-Jan to 2021-Nov (.csv file)
-* SHARP: there are two subfolders here
-    * header: Space-Weather HMI-Active Region Patch (SHARP) data, time-series data grouped by active region. (.csv files) See [here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019SW002214) for a paper by our group on using SHARP data to predict flares. And [here](http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm) for a very accessible tutorial on what is SHARP and how to query more SHARP data.
-    * image: The low-resolution Helioseismic and Magnetic Imager (HMI) data grouped by active region. (.fits files)
+* SHARP: There are two subfolders here
+    * header: The Space-Weather HMI-Active Region Patch (SHARP) data, time-series data grouped by active region (.csv files). See [here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019SW002214) for a paper by our group on using SHARP data to predict flares. And [here](http://jsoc.stanford.edu/doc/data/hmi/sharp/sharp.htm) for a very accessible tutorial on what is SHARP and how to query more SHARP data.
+    * image: The low-resolution Helioseismic and Magnetic Imager (HMI) data grouped by active region (.fits files).
+* SMARP: The Space-Weather MDI Active Region Patches (SMARP) data, similar to SHARP data but covers different solar cycle. See [here](https://iopscience.iop.org/article/10.3847/1538-4365/ac1f1d) for the difference between SHARP & SMARP. And [here](https://arxiv.org/abs/2204.03710) for a recent paper by our group on using SMARP data. The `header` (.csv) & `image` (.fits) folder have similar structure as the SHARP data.
+* SPAT: The high-resolution Helioseismic and Magnetic Imager (HMI) data, compiled based on flare classes. For example, you can access the /Bflare_data/ folder for B-class flare HMI data collected 1,6,12,24 hours before the flare peak time (.hdf5 file).
+
+
+### Prospective Datasets (How to access more):
      
 
      
