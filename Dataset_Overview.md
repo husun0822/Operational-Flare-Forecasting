@@ -1,8 +1,6 @@
-# Solar Flare Datasets: What we have and how we can access more
+# Solar Flare Datasets: What we have so far
 
 This readme document is written to give a general overview about the existing datasets we have right now and give some additional guidance and resources for obtaining new data. Please update the information here if you have new resources available.
-
-### Existing Datasets (What we have so far):
 
 Our data for solar flare forecast machine learning works are measured in Terabytes (TB), making it hard to keep a local copy of the entire database. But since the data are organized in a hierachical structure (based on active region #), one can always compile a smaller amount of data files to test models & do feature engineering locally on your own laptop.
 
@@ -39,9 +37,3 @@ There are several relevant subdirectories under this root folder:
     * image: The low-resolution Helioseismic and Magnetic Imager (HMI) data grouped by active region (.fits files).
 * SMARP: The Space-Weather MDI Active Region Patches (SMARP) data, similar to SHARP data but covers different solar cycle. See [here](https://iopscience.iop.org/article/10.3847/1538-4365/ac1f1d) for the difference between SHARP & SMARP. And [here](https://arxiv.org/abs/2204.03710) for a recent paper by our group on using SMARP data. The `header` (.csv) & `image` (.fits) folder have similar structure as the SHARP data.
 * SPAT: The high-resolution Helioseismic and Magnetic Imager (HMI) data, compiled based on flare classes. For example, you can access the /Bflare_data/ folder for B-class flare HMI data collected 1,6,12,24 hours before the flare peak time (.hdf5 file).
-
-
-### Prospective Datasets (How to access more):
-     
-
-     
