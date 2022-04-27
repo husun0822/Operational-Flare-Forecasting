@@ -6,4 +6,5 @@ This readme document is written to give a general overview about the existing da
 
 Our data for solar flare forecast machine learning works are measured in Terabytes (TB), making it hard to keep a local copy of the entire database. But since the data are organized in a hierachical structure, one can always compile a smaller amount of data files to test models & do feature engineering locally on your own laptop.
 
-The data is stored using our SOLSTICE disk and can be accessed via the U-M **GreatLakes** HPC. See [here](https://arc.umich.edu/greatlakes/user-guide/) if you are new to GreatLakes.
+The data is stored using our SOLSTICE disk and can be accessed via the U-M **GreatLakes** HPC. See [here](https://arc.umich.edu/greatlakes/user-guide/) if you are new to GreatLakes. To access the folder where the data locates once you logged onto the GreatLakes remote machine, simply type `cd ../../nfs/clasp-solsticedisk/`
+
